@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 setup(
     name="django-json-rpc",
-    version="0.7.2",
+    version="0.7.3",
     description="A simple JSON-RPC implementation for Django",
     author="Samuel Sutch",
     author_email="sam@sutch.net",
@@ -36,5 +36,5 @@ setup(
     ],
     packages=['jsonrpc'],
     zip_safe=False,  # we include templates and tests
-    install_requires=['Django>=1.0', 'six'],
+    install_requires=['Django>=1.9', 'six'],
     package_data={'jsonrpc': ['templates/*']})
